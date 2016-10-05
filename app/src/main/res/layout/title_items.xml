@@ -4,26 +4,49 @@
     android:layout_height="wrap_content">
 
     <Button
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="生魚片"
-        android:id="@+id/btnQueryDetail" />
+        android:id="@+id/btnQueryFish"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
 
     <TableRow
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="265dp"
+        android:layout_marginTop="229dp"
+        android:id="@+id/tableRow"
         android:layout_alignParentTop="true"
         android:layout_alignParentStart="true">
 
-        <Button
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:text="上一頁"
-            android:id="@+id/btnPrevious"
-            android:layout_gravity="center_vertical"
-            android:layout_weight="1" />
-
     </TableRow>
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="100sp"
+        android:id="@+id/spDateShow"
+        android:layout_below="@+id/tableRow"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="149dp" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:text="上一頁"
+        android:id="@+id/btnPrevious"
+        android:layout_gravity="center_vertical"
+        android:layout_marginTop="229dp"
+        android:layout_alignParentTop="false"
+        android:layout_alignParentStart="false"
+        android:layout_alignParentBottom="true" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="握壽司"
+        android:id="@+id/btnQuerySushi"
+        android:layout_below="@+id/btnQueryFish"
+        android:layout_alignParentStart="true" />
+
 
 </RelativeLayout>

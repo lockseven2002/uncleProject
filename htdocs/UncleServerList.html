@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style>
+body {margin:0;background-color:#1abc9c;}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-color: #111;
+}
+
+.active {
+    background-color: #4CAF50;
+}
+table ,th , td  {
+	border: 1px solid grey;
+	border-collapse: collapse;
+	padding: 50px;
+}
+table tr:nth-child(odd) {
+	background-color: #f1f1f1;
+}
+table tr:nth-child(even) {
+	background-color: #ffffff;
+}
+</style>
+</head>
+<body>
+
+<ul>
+  <li><a class="active" href="#home">銷售總金額</a></li>
+</ul>
+
+<div style="margin:5% 40%;background-color:#1abc9c height:100%;width:100%" ng-app="myApp" ng-controller="customersCtrl"  >
+
+<table>
+  <tr>
+    <td>日期</td>
+	<td>銷售總額</td>
+  </tr>
+  <tr ng-repeat="x in names">
+    <td>{{ x.date }}</td>
+    <td>{{ x.sum }}</td>
+  </tr>
+</table>
+
+</div>
+
+<script src="UncleServerTag1.js"></script>
+
+</body>
+</html>

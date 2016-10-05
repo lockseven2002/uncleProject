@@ -7,7 +7,7 @@ import android.view.View;
 import android.widget.Button;
 /*
 *
-* 123456789123123123123123
+*
 * */
 public class Welcome extends AppCompatActivity {
     Button btnQuery;
@@ -19,10 +19,8 @@ public class Welcome extends AppCompatActivity {
 
         btnQuery = (Button)findViewById(R.id.btnQueryAll);
         btnCreate = (Button)findViewById(R.id.btnNew);
-
         btnQuery.setOnClickListener(new ClickEvent());
         btnCreate.setOnClickListener(new ClickEvent());
-
 
     }
     class ClickEvent implements View.OnClickListener{
@@ -32,12 +30,12 @@ public class Welcome extends AppCompatActivity {
                 case R.id.btnQueryAll:
                     Intent itn = new Intent(getApplicationContext(),TitleItems.class);
                     startActivity(itn);
-                    break;
-                case R.id.btnNew:
-                    break;
-                case R.id.btnModify:
+                    finish();
                     break;
                 default:
+                    Intent itnCreate = new Intent(getApplicationContext(),CreateItems.class);
+                    startActivity(itnCreate);
+                    finish();
                     break;
             }
         }
