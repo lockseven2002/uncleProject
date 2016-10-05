@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="300sp"
+        android:layout_height="60sp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/tvProject"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="53dp"
+        android:textSize="50sp"
+        android:layout_alignStart="@+id/edCountShow" />
+
+    <TextView
+        android:layout_width="300sp"
+        android:layout_height="60sp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/tvDate"
+        android:layout_alignTop="@+id/tvShow3"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="確認"
+        android:id="@+id/btnOk"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="返回"
+        android:id="@+id/btnReSet"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="100sp"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="品項"
+        android:id="@+id/tvShow1"
+        android:layout_alignTop="@+id/tvProject"
+        android:layout_alignBottom="@+id/tvProject"
+        android:textSize="50sp"
+        android:layout_alignParentStart="false" />
+
+    <TextView
+        android:layout_width="100sp"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="數量"
+        android:id="@+id/tvShow2"
+        android:textSize="50sp"
+        android:layout_alignBottom="@+id/edCountShow"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="100sp"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="日期"
+        android:id="@+id/tvShow3"
+        android:textSize="50sp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="300sp"
+        android:layout_height="60sp"
+        android:id="@+id/edCountShow"
+        android:layout_above="@+id/tvDate"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="57dp" />
+</RelativeLayout>

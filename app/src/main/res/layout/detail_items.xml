@@ -6,14 +6,23 @@
 
     <ListView
         android:layout_width="match_parent"
-        android:layout_height="323dp"
-        android:id="@+id/listViewDetail" />
-
+        android:layout_height="500sp"
+        android:id="@+id/listViewDetail"
+        android:headerDividersEnabled="false"/>
     <Button
-        android:layout_width="wrap_content"
+        android:layout_width="210sp"
         android:layout_height="wrap_content"
         android:text="上一頁"
+        android:textSize="60sp"
         android:id="@+id/btnPrevious"
         android:layout_gravity="right|bottom" />
+
+    <Button
+        android:layout_width="210sp"
+        android:layout_height="wrap_content"
+        android:text="修改"
+        android:textSize="60sp"
+        android:id="@+id/btnModify"
+        android:layout_gravity="left|bottom" />
 
 </FrameLayout>

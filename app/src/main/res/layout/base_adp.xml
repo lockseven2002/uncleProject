@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="150sp"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="30sp"
+        android:text="品項"
+        android:id="@+id/TextName"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="150sp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/TextName"
+        android:textSize="30sp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/tvName"/>
+
+    <TextView
+        android:layout_width="150sp"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"
+        android:layout_toRightOf="@id/TextName"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="數量"
+        android:id="@+id/textCount" />
+
+    <TextView
+        android:layout_width="150sp"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"
+        android:layout_toRightOf="@id/tvName"
+        android:layout_below="@id/textCount"
+        android:id="@+id/tvCount"/>
+
+    <Button
+        android:layout_width="60sp"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/textCount"
+        android:layout_alignParentRight="true"
+        android:textSize="30sp"
+        android:text="+"
+        android:id="@+id/btnUp"
+        android:focusable="false"/>
+    <Button
+        android:layout_width="60sp"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/tvCount"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/btnUp"
+        android:textSize="30sp"
+        android:text="-"
+        android:id="@+id/btnDown"
+        android:focusable="false"/>
+
+</RelativeLayout>
