@@ -10,8 +10,6 @@ table tr:nth-child(even) {
 	background-color: #ffffff;
 }
 
-body {margin:0;background-color:#1abc9c;}
-
 ul {
     list-style-type: none;
     margin: 0;
@@ -20,15 +18,15 @@ ul {
     background-color: #333;
 }
 
-li {
+li{
     float: left;
 }
 
-.active{
- background-color: #ffbf00;
+li a:focus, .active {
+    background-color: #ffbf00; 
 }
 
-li a, .dropbtn {
+li a, #dropbtn {
     display: inline-block;
     color: white;
     text-align: center;
@@ -36,7 +34,7 @@ li a, .dropbtn {
     text-decoration: none;
 }
 
-li a:hover, .dropdown:hover .dropbtn {
+li a:hover, .dropdown:hover #dropbtn {
     background-color: red;
 }
 
